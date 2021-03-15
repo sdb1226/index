@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>배스킨라빈스-메인</title>
+    
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" href="img/icon_baskicon.png">
+    
+        <!-- FontAwesome5, 구글 폰트(폰트, 아이콘) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    
+        <!-- Jquary, Swiper -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
+        <!-- css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="index-login.html">
+        <link rel="stylesheet" href="menu-icecream.html">
+        <!-- <script src="js/.."></script> -->
+    </head>
+
+<body>
+    <div class="wrap">
+        <div class="ad"></div>
+        <header>
+            <div class="logoandlogincontainer">
+                <a href="index.html">
+                    <img src="https://logos-download.com/wp-content/uploads/2016/04/Baskin-Robbins-logo_2.png" alt="">
+                </a>
+                <ul class="login_container">
+                    <li>
+                        <a href="index-login.html">로그인&#183;회원가입</a>
+                    </li>
+                    <li>
+                        <a href="">고객센터</a>
+                    </li>
+                    <li>
+                        <a href="">CONTACT US</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <nav>
+            <ul class="mainmenu_container">
+                <li class="mainmenu">FLAVOR OF THE MONTH</li>
+                <li class="mainmenu">MENU</li>
+                <li class="mainmenu">EVENT</li>
+                <li class="mainmenu">STORE</li>
+                <li class="mainmenu">ABOUT</li>
+                <li class="backboard">
+                    <div class="submenu_container_outline">
+                        <ul class="submenu_container">
+                            <li>
+                                <a href="menu-icecream.html">
+                                    <img src="https://www.baskinrobbins.co.kr/assets/images/common/flavor/img_monthly_fom.png?v=20210201"
+                                        width="auto" height="100%" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="submenu_container">
+                            <li class="submenu"><a href="menu-icecream.html">아이스크림</a></li>
+                            <li class="submenu"><a href="menu-icecream-cake.html">아이스크림 케이크</a></li>
+                            <li class="submenu"><a href="">커피</a></li>
+                            <li class="submenu"><a href="">음료</a></li>
+                            <li class="submenu"><a href="">디저트</a></li>
+                        </ul>
+                        <ul class="submenu_container">
+                            <li class="submenu"><a href="">진행 중인 이벤트</a></li>
+                            <li class="submenu"><a href="">당첨자 발표</a></li>
+                        </ul>
+                        <ul class="submenu_container">
+                            <li class="submenu"><a href="">매장찾기</a></li>
+                            <li class="submenu"><a href="">고객센터</a></li>
+
+                        </ul>
+                        <ul class="submenu_container">
+                            <li class="submenu"><a href="">공지사항</a></li>
+                            <li class="submenu"><a href="">보도자료</a></li>
+                            <li class="submenu"><a href="">채용 정보</a></li>
+                            <li class="submenu"><a href="">점포 개설 문의</a></li>
+                            <li class="submenu"><a href="">CONTACT US</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <script>
+            const nav = document.querySelector('nav');
+            const navTopOffset = nav.offsetTop;
+            window.addEventListener('scroll', e => {
+
+                if (window.pageYOffset >= navTopOffset) {
+                    nav.style.position = 'fixed';
+                    nav.style.top = 0;
+                    nav.style.left = 0;
+                    nav.style.right = 0;
+                } else {
+                    nav.style.position = '';
+                    nav.style.top = '';
+                }
+            });
+        </script>
+        <section>
+            <div class="sec_login">
+                <div class="logwindow">
+                    <div class="h2andp">
+                        <h2>LOGIN</h2>
+                        <p class="p_light">배스킨라빈스 홈페이지에 오신 것을 환영합니다!
+                            <p class="p_pink">해피포인트 아이디로 간편하게 로그인하세요.</p>
+                        </p>
+                    </div>
+                    <div class="loginbox_container">
+                        <input type="text" value="ID" name="" id="id">
+                        <input type="text" value="PASSWORD" name="" id="pw">
+                        <div class="idsavebox">
+                            <input type="checkbox" id="idsave">
+                            아이디 저장
+                        </div>
+
+                        <input type="button" value="로그인" name="" id="loginbut">
+                        <ul class="login_assetbox">
+                            <li><a href="">아이디 찾기</a></li>
+                            
+                            <li><a href="">비밀번호 재발급</a></li>
+                        <li><a href="">해피포인트 가입</a></li>
+                        </ul>
+                        <input type="button" value="회원가입" name="" id="joinbut">
+                    </div>
+                </div>
+
+        </section>
+
+        <footer>
+            <div class="ft_hd">
+                <ul>
+                    <li><a href="">점포개설문의</a></li>
+                    <li><a href="">채용문의</a></li>
+                    <li><a href="">윤리신고센터</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">영상정보처리기기운영관리방침</a></li>
+                    <li><a href="">거래희망회사사전등록</a></li>
+                </ul>
+            </div>
+            <div class="ft_bd">
+                <div class="ftulimgspan">
+                    <ul>
+                        <li><a href=""><img src="img/btn_happypoint.png" alt=""></a></li>
+                        <li><a href=""><img src="img/btn_happymarket.png" alt=""></a></li>
+                        <li><a href=""><img src="img/btn_spc_story.png" alt=""></a></li>
+                        <li><a href=""><img src="img/btn_norton.gif" alt=""></a></li>
+                        <li><a href=""><img src="img/btn_ccm.gif" alt=""></a></li>
+                        <li><a href=""><img src="img/btn_ksa.png" alt=""></a></li>
+                        <li>
+                            <select>
+                                <optgroup label="Family Site">
+                                    <option value="">Family Site</option>
+                                    <option value="">배스킨 스쿨</option>
+                                    <option value="">SPC그룹사이트</option>
+                                    <option value="">SPC MAGAZINE</option>
+                                    <option value="">BR코리아</option>
+                                    <option value="">해피포인트카드</option>
+                                    <option value="">파스쿠찌</option>
+                                    <option value="">삼립</option>
+                                    <option value="">파리바게트</option>
+                                    <option value="">던킨도너츠</option>
+                                </optgroup>
+                            </select>
+                        </li>
+                    </ul>
+                    <a href="index.html">
+                        <img src="img/baskinlogoblack.png" width="225px" height="36px" alt="">
+                    </a>
+
+
+                    <span>
+                        사업자 등록번호 : 303-81-09535 비알코리아(주) 대표이사 김창대 서울특별시 서초구 남부순환로 2620(양재동 11-149번지)<br>
+                        TEL : 080-555-3131 개인정보관리책임자 : 김경우<br>
+                        Copyright ⓒ 2016 BRKOREA Company. All Rights Reserved.
+                    </span>
+
+                </div>
+                <!--ftmenuimgspan-->
+            </div>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>

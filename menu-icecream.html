@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배스킨라빈스-메뉴-아이스크림</title>
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="img/icon_baskicon.png">
+
+    <!-- FontAwesome5, 구글 폰트(폰트, 아이콘) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <!-- Jquary, Swiper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="index-login.html">
+    <link rel="stylesheet" href="menu-icecream.html">
+    <!-- <script src="js/.."></script> -->
+</head>
+
+<body>
+    <div class="wrap">
+
+        <header>
+            <div class="logoandlogincontainer">
+                <a href="index.html">
+                    <img src="https://logos-download.com/wp-content/uploads/2016/04/Baskin-Robbins-logo_2.png" alt="">
+                </a>
+                <ul class="login_container">
+                    <li>
+                        <a href="index-login.html">로그인&#183;회원가입</a>
+                    </li>
+                    <li>
+                        <a href="">고객센터</a>
+                    </li>
+                    <li>
+                        <a href="">CONTACT US</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <nav>
+            <ul class="mainmenu_container">
+                <li class="mainmenu">FLAVOR OF THE MONTH</li>
+                <li class="mainmenu">MENU</li>
+                <li class="mainmenu">EVENT</li>
+                <li class="mainmenu">STORE</li>
+                <li class="mainmenu">ABOUT</li>
+                <li class="backboard">
+                    <div class="submenu_container_outline">
+                        <ul class="submenu_container">
+                            <li>
+                                <a href="menu-icecream.html">
+                                    <img src="https://www.baskinrobbins.co.kr/assets/images/common/flavor/img_monthly_fom.png?v=20210201"
+                                        width="auto" height="100%" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="submenu_container">
+                            <li class="submenu"><a href="menu-icecream.html">아이스크림</a></li>
+                            <li class="submenu"><a href="menu-icecream-cake.html">아이스크림 케이크</a></li>
+                            <li class="submenu"><a href="">커피</a></li>
+                            <li class="submenu"><a href="">음료</a></li>
+                            <li class="submenu"><a href="">디저트</a></li>
+                        </ul>
+                        <ul class="submenu_container">
+                            <li class="submenu"><a href="">진행 중인 이벤트</a></li>
+                            <li class="submenu"><a href="">당첨자 발표</a></li>
+                        </ul>
+                        <ul class="submenu_container">
+                            <li class="submenu"><a href="">매장찾기</a></li>
+                            <li class="submenu"><a href="">고객센터</a></li>
+
+                        </ul>
+                        <ul class="submenu_container">
+                            <li class="submenu"><a href="">공지사항</a></li>
+                            <li class="submenu"><a href="">보도자료</a></li>
+                            <li class="submenu"><a href="">채용 정보</a></li>
+                            <li class="submenu"><a href="">점포 개설 문의</a></li>
+                            <li class="submenu"><a href="">CONTACT US</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <script>
+            const nav = document.querySelector('nav');
+            const navTopOffset = nav.offsetTop;
+            window.addEventListener('scroll', e => {
+
+                if (window.pageYOffset >= navTopOffset) {
+                    nav.style.position = 'fixed';
+                    nav.style.top = 0;
+                    nav.style.left = 0;
+                    nav.style.right = 0;
+                } else {
+                    nav.style.position = '';
+                    nav.style.top = '';
+                }
+            });
+        </script>
+        <section>
+            <div class="menu-icecream">
+                <div class="h2andp h2andp_title">
+                    <h2>ICE CREAM</h2>
+                    <p class="p_light">아이스크림의 기준은 배스킨라빈스!</p>
+                </div>
+
+                <div class="sec_wallpaper" id="fotm">
+                    <div class="fotmandtxt">
+                        <img src="https://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?v=210201"
+                            width="auto" height="520px" alt="">
+                        <div class="fotm_txt">
+                            <p>먼저 만나는 3월<b>&nbsp;이달의 맛</b></p>
+                            <b>아이스 밀카 초콜릿</b>
+                            <span>바닐라 아이스크림에 밀카 알프스 밀크 초콜릿 리본과<br>
+                                밀카 초콜릿 무 쿠키가 곁들어진 밀카 초콜릿 아이스크림<br></span>
+
+                            <div class="photo_container icecream_photo_container">
+                                <div class="photo"></div>
+                                <div class="plus">+</div>
+                                <div class="photo"></div>
+                                <div class="plus">+</div>
+                                <div class="photo"></div>
+                                <div class="equal">=</div>
+                                <div class="photo"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h2andp">
+                    <h2>FLAVOR OF THE BEST</h2>
+                    <!-- <p class="p_light">아이스크림의 기준은 배스킨라빈스!</p> -->
+                </div>
+
+                <div class="swiper-container at2-flavorcontainer">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="at2_flavor_container">
+                                <li class="icecreamnumber"><i class="fas fa-crown crown_yellow"></i> 1위</li>
+                                <li class="icecreamflavor">
+                                    <img src="img/1682940531.png" alt="">
+                                </li>
+                                <li class="icecreamtext">아이스 밀카 초콜릿</li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="at2_flavor_container">
+                                <li class="icecreamnumber"><i class="fas fa-crown crown_silver"></i> 2위</li>
+                                <li class="icecreamflavor">
+                                    <img src="img/1528197022.png" alt="">
+                                </li>
+                                <li class="icecreamtext">엄마는 외계인</li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="at2_flavor_container">
+                                <li class="icecreamnumber"><i class="fas fa-crown crown_bronze"></i> 3위</li>
+                                <li class="icecreamflavor">
+                                    <img src="img/1644040922.png" alt="">
+                                </li>
+                                <li class="icecreamtext">아몬드 봉봉</li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="at2_flavor_container">
+                                <li class="icecreamnumber">4위</li>
+                                <li class="icecreamflavor">
+                                    <img src="img/1530775682.png" alt="">
+                                </li>
+                                <li class="icecreamtext">민트 초콜릿 칩</li>
+                            </ul>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <ul class="at2_flavor_container">
+                                <li class="icecreamnumber">5위</li>
+                                <li class="icecreamflavor">
+                                    <img src="img/1530775918.png" alt="">
+                                </li>
+                                <li class="icecreamtext">뉴욕 치즈케이크</li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="at2_flavor_container">
+                                <li class="icecreamnumber">6위</li>
+                                <li class="icecreamflavor">
+                                    <img src="img/1452062882.png" alt="">
+                                </li>
+                                <li class="icecreamtext">체리 쥬빌레</li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="at2_flavor_container">
+                                <li class="icecreamnumber">7위</li>
+                                <li class="icecreamflavor">
+                                    <img src="img/1530775807.png" alt="">
+                                </li>
+                                <li class="icecreamtext">슈팅스타</li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="at2_flavor_container">
+                                <li class="icecreamnumber">8위</li>
+                                <li class="icecreamflavor">
+                                    <img src="img/1638868047.png" alt="">
+                                </li>
+                                <li class="icecreamtext">오레오 쿠키앤크림</li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="at2_flavor_container">
+                                <li class="icecreamnumber">9위</li>
+                                <li class="icecreamflavor">
+                                    <img src="img/1530777439.png" alt="">
+                                </li>
+                                <li class="icecreamtext">바람과 함께 사라지다</li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="at2_flavor_container">
+                                <li class="icecreamnumber">10위</li>
+                                <li class="icecreamflavor">
+                                    <img src="img/1530779443.png" alt="">
+                                </li>
+                                <li class="icecreamtext">사랑에 빠진 딸기</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <script>
+                    var swiper = new Swiper('.at2-flavorcontainer', {
+                        slidesPerView: 4,
+                        spaceBetween: 0,
+
+
+                        autoplay: {
+                            delay: 2000,
+                            disableOnInteraction: false,
+                        },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                    });
+                </script>
+
+                <div class="h2andp">
+                    <h2>ICE CREAM</h2>
+                    <!-- <p class="p_light">아이스크림의 기준은 배스킨라빈스!</p> -->
+                </div>
+                <div class="swiper-container at2-icecreamcontainer">
+                    <div class="swiper-wrapper">
+                        <!-- 1번째 슬라이드 -->
+                        <div class="swiper-slide">
+                            <table class="ice_container">
+                                <tr>
+                                    <td class="withcorn">
+                                        <div class="ice_name">아이스 밀카 초콜릿<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1682940531.png" alt="우낀소"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">아이스 호떡<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1646876834.png" alt="호떡"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">아이스 붕어빵<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1581401848.png" alt="붕어빵"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">매시업스 시리얼<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1578534262.png" alt="매시업스 시리얼"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="withcorn">
+                                        <div class="ice_name">오레오 쿠키앤크림<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1638868047.png" alt="오래오 쿠앤크"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">메이플 월넛<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1638867849.png" alt="메이플월넛"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">알폰소 망고<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1530780963.png" alt="알폰소망고"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">다크 초코 나이트<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1551622151.png" alt="다크초코나이트"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="withcorn">
+                                        <div class="ice_name">북극곰 폴라베어<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1575700157.png" alt="폴라베어"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">초콜릿 칩<div class="ice_name_point"></div>
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1518070495.png" alt="초콜릿 칩"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">에스프레소 앤 크림<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1530779599.png" alt="에스프레소앤크림"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">럭키 카라멜 터틀<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1528262146.png" alt="럭키카라멜터틀"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="withcorn">
+                                        <div class="ice_name">엄마는 외계인<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1528197022.png" alt="엄마외계"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">아빠는 딸바봉<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1615253140.png" alt="딸바봉"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">아몬드 봉봉<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1644040922.png" alt="아몬드봉봉"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">민트 초콜릿 칩<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1530775682.png" alt="민트초코"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="withcorn">
+                                        <div class="ice_name">슈팅스타
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1530775807.png" alt="슈팅스타"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">사랑에 빠진 딸기<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1530779443.png" alt="사빠딸"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">초코나무 숲<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1530776851.png" alt="초코나무"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">뉴욕 치즈케이크<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1530775918.png" alt="뉴욕 치즈케이크"></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!-- 2번째 슬라이드 -->
+                        <div class="swiper-slide">
+                            <table class="ice_container">
+                                <tr>
+                                    <td class="withcorn">
+                                        <div class="ice_name">피스타치오 아몬드<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1530775359.png" alt="피스타치오"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">베리베리 스트로베리<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1554261647.png" alt="베리베리"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">바람과 함께 사라지다<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1530777439.png" alt="바함사"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">
+                                            레인보우 샤베트
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1530778136.png" alt="레인보우"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="withcorn">
+                                        <div class="ice_name">
+                                            이상한 나라의 솜사탕
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1530781163.png" alt="이상한솜사탕"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">
+                                            초콜릿
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1530771632.png" alt="쪼꼬"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">31요거트<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1530778368.png" alt="요거트"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">그린티<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1530778001.png" alt="그린티"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="withcorn">
+                                        <div class="ice_name">
+                                            체리 쥬빌레
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1452062882.png" alt="체리"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">
+                                            바닐라
+                                            <div class="ice_name_point"></div>
+                                        </div>
+
+                                        <a href=""><img src="img/1530775244.png" alt="바닐라"></a>
+                                    </td>
+                                    <td class="withcorn">
+                                        <div class="ice_name">
+                                            초콜릿 무스
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1530778494.png" alt="무스"></a>
+                                    </td>
+                                    <td>
+                                        <div class="ice_name">
+                                            로투스 비스코프 아이스크림 레디팩
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1599107691.png" alt="로투스레디팩"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ice_name">체리 쥬빌레 레디팩<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1594374042.png" alt="체리레디"></a>
+                                    </td>
+                                    <td>
+                                        <div class="ice_name">베리베리 스트로베리 레디팩<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1594373971.png" alt="스트로레디"></a>
+                                    </td>
+                                    <td>
+                                        <div class="ice_name">
+                                            민트 초콜릿 칩 레디팩
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1594370583.png" alt="민트레디"></a>
+                                    </td>
+                                    <td>
+                                        <div class="ice_name">
+                                            뉴욕 치즈케이크 레디팩
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1594370260.png" alt="뉴욕레디"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ice_name">
+                                            아이스 죠리퐁 레디팩
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1594369809.png" alt=""></a>
+                                    </td>
+                                    <td>
+                                        <div class="ice_name">
+                                            허쉬 마카다미아 넛 레디팩
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1594369607.png" alt=""></a>
+                                    </td>
+                                    <td>
+                                        <div class="ice_name">
+                                            끼리 크림치즈앤 스트로베리 레디팩
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1594368994.png" alt=""></a>
+                                    </td>
+                                    <td>
+                                        <div class="ice_name">그렉요거트 허니 레디팩<div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1578286848.png" alt=""></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+                        <!-- 3번째 슬라이드 -->
+                        <div class="swiper-slide">
+                            <table class="ice_container">
+                                <tr>
+                                    <td>
+                                        <div class="ice_name">
+                                            오레오 쿠키앤카라멜 레디팩
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1619943948.png" alt="피스타치오"></a>
+                                    </td>
+                                    <td>
+                                        <div class="ice_name">오레오 쿠키앤크림 레디팩
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1619944045.png" alt="베리베리"></a>
+                                    </td>
+                                    <td>
+                                        <div class="ice_name">블록팩
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1619858139.png" alt="바함사"></a>
+                                    </td>
+                                    <td>
+                                        <div class="ice_name">파인트
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1619858163.png" alt="레인보우"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ice_name">쿼터
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1619858183.png" alt="이상한솜사탕"></a>
+                                    </td>
+                                    <td>
+                                        <div class="ice_name">패밀리
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1619858204.png" alt="쪼꼬"></a>
+                                    </td>
+                                    <td>
+                                        <div class="ice_name">하프갤론
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1619858228.png" alt="요거트"></a>
+                                    </td>
+                                    <td>
+                                        <div class="ice_name">핸드팩세트
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1619858249.png" alt="그린티"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ice_name">버라이어티팩
+                                            <div class="ice_name_point"></div>
+                                        </div>
+                                        <a href=""><img src="img/1619858263.png" alt="체리"></a>
+                                    </td>
+                                    <td colspan="3"></td>
+                                    <!-- <td></td>
+                                    <td></td> -->
+                                </tr>
+                                <tr>
+                                    <td colspan="4"></td>
+                                    <!--
+                                        <td></td>
+                                    <td></td>
+                                    <td></td> -->
+                                </tr>
+                                <tr>
+                                    <td colspan="4"></td>
+                                    <!--
+                                        <td></td>
+                                    <td></td>
+                                    <td></td> -->
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination swiper-pagination2"></div>
+                </div>
+                <style>
+                    .swiper-pagination-bullet {
+                        width: 30px;
+                        height: 30px;
+                        text-align: center;
+                        line-height: 30px;
+                        font-size: 12px;
+                        color: #000;
+                        opacity: 1;
+                        background: rgba(0, 0, 0, 0.2);
+                    }
+
+                    .swiper-pagination-bullet-active {
+                        color: #fff;
+                        background-color: #DF3E9C;
+                    }
+                </style>
+
+                <script>
+                    var swiper = new Swiper('.at2-icecreamcontainer', {
+                        pagination: {
+                            el: '.swiper-pagination2',
+                            clickable: true,
+                            renderBullet: function (index, className) {
+                                return '<span class="' + className + '">' + (index + 1) + '</span>';
+                            },
+                        },
+                    });
+                </script>
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="ft_hd">
+                <ul>
+                    <li><a href="">점포개설문의</a></li>
+                    <li><a href="">채용문의</a></li>
+                    <li><a href="">윤리신고센터</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">영상정보처리기기운영관리방침</a></li>
+                    <li><a href="">거래희망회사사전등록</a></li>
+                </ul>
+            </div>
+            <div class="ft_bd">
+                <div class="ftulimgspan">
+                    <ul>
+                        <li><a href=""><img src="img/btn_happypoint.png" alt=""></a></li>
+                        <li><a href=""><img src="img/btn_happymarket.png" alt=""></a></li>
+                        <li><a href=""><img src="img/btn_spc_story.png" alt=""></a></li>
+                        <li><a href=""><img src="img/btn_norton.gif" alt=""></a></li>
+                        <li><a href=""><img src="img/btn_ccm.gif" alt=""></a></li>
+                        <li><a href=""><img src="img/btn_ksa.png" alt=""></a></li>
+                        <li>
+                            <select>
+                                <optgroup label="Family Site">
+                                    <option value="">Family Site</option>
+                                    <option value="">배스킨 스쿨</option>
+                                    <option value="">SPC그룹사이트</option>
+                                    <option value="">SPC MAGAZINE</option>
+                                    <option value="">BR코리아</option>
+                                    <option value="">해피포인트카드</option>
+                                    <option value="">파스쿠찌</option>
+                                    <option value="">삼립</option>
+                                    <option value="">파리바게트</option>
+                                    <option value="">던킨도너츠</option>
+                                </optgroup>
+                            </select>
+                        </li>
+                    </ul>
+                    <a href="index.html">
+                        <img src="img/baskinlogoblack.png" width="225px" height="36px" alt="">
+                    </a>
+
+
+                    <span>
+                        사업자 등록번호 : 303-81-09535 비알코리아(주) 대표이사 김창대 서울특별시 서초구 남부순환로 2620(양재동 11-149번지)<br>
+                        TEL : 080-555-3131 개인정보관리책임자 : 김경우<br>
+                        Copyright ⓒ 2016 BRKOREA Company. All Rights Reserved.
+                    </span>
+
+                </div>
+                <!--ftmenuimgspan-->
+            </div>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
