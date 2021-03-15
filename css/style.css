@@ -1,0 +1,1230 @@
+@font-face {
+    src: url(../font/배스킨라빈스\ B.ttf);
+    font-family: 'brb';
+}
+
+@font-face {
+    src: url(../font/배스킨라빈스\ R.ttf);
+    font-family: 'brr';
+}
+
+@font-face {
+    src: url(../font/NanumGothic.ttf);
+    font-family: 'nanumgo';
+}
+
+@font-face {
+    src: url(../font/NanumSquareRoundR.ttf);
+    font-family: 'NanumSquareRoundr';
+}
+
+@font-face {
+    src: url(../font/NanumSquareRoundB.ttf);
+    font-family: 'NanumSquareRoundb';
+}
+
+@font-face {
+    src: url(../font/NanumSquareRoundEB.ttf);
+    font-family: 'NanumSquareRoundeb';
+}
+
+@font-face {
+    src: url(../font/NanumSquareRoundL.ttf);
+    font-family: 'NanumSquareRoundl';
+}
+
+
+@font-face {
+    src: url(../font/Maplestory\ Bold.ttf);
+    font-family: 'maple_b';
+}
+
+@font-face {
+    src: url(../font/Maplestory\ Light.ttf);
+    font-family: 'maple_l';
+}
+
+
+/* font-family: 'Gothic A1', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    border-top: 4px solid #DF3E9C;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+}
+
+.logoandlogincontainer {
+    width: 1212px;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: darkgray; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoandlogincontainer a img {
+    width: 239px;
+    height: auto;
+}
+
+
+.login_container {
+    width: 364px;
+    height: 24px;
+    display: flex;
+    line-height: 24px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.login_container>li>a {
+    color: #454545;
+    font-size: 15px;
+    font-family: 'NanumSquareRoundr';
+}
+
+.login_container>li>a>i {
+    color: #DF3E9C;
+    font-size: 15px;
+}
+
+
+nav {
+    width: 100%;
+    height: 48px;
+    background-color: #1F4C9A;
+    position: relative;
+    z-index: 100;
+
+}
+
+.mainmenu_container {
+    margin: 0 auto;
+    width: 1056px;
+    height: 100%;
+    /* background-color: #f1abab; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainmenu {
+    line-height: 48px;
+    font-family: 'NanumSquareRoundeb';
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    cursor: default;
+    color: #fff;
+}
+
+.mainmenu:nth-child(1),
+.submenu_container:nth-child(1) {
+    width: 256px;
+    /* background-color: cadetblue; */
+}
+
+.mainmenu:nth-child(2),
+.submenu_container:nth-child(2) {
+    width: 140px;
+    /* background-color: coral; */
+}
+
+.mainmenu:nth-child(3),
+.mainmenu:nth-child(5),
+.submenu_container:nth-child(3),
+.submenu_container:nth-child(5) {
+    width: 127px;
+    /* background-color: chartreuse; */
+}
+
+.mainmenu:nth-child(4),
+.submenu_container:nth-child(4) {
+    width: 80px;
+    /* background-color: rgb(74, 204, 161); */
+}
+
+
+
+
+.backboard {
+    width: 100%;
+    height: 0;
+    background-color: #fafafade;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    transition: all 0.5s;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.submenu_container_outline {
+    margin: 0 auto;
+    width: 1056px;
+    height: 100%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.submenu_container {
+    height: 100%;
+}
+
+.submenu {
+    line-height: 30px;
+    transition: all 0.5s;
+    height: 30px;
+    position: relative;
+    z-index: 100;
+    color: #343434;
+    font-family: 'NanumSquareRoundl';
+    font-size: 14px;
+    text-align: center;
+}
+
+.submenu_container>li>a>img {
+    width: auto;
+    height: 210px;
+    margin-left: 30px;
+}
+
+.submenu:first-child {
+    margin-top: 26px;
+}
+
+
+/* .submenu_container:nth-child(1) {
+    width: 361px;
+} */
+
+
+
+/* .submenu_container:nth-child(2) {
+    width: 145px;
+    
+}
+
+.submenu_container:nth-child(3),.submenu_container:nth-child(4),.submenu_container:nth-child(5) {
+    width: 165px;
+    
+} */
+
+.submenu>a {
+    color: #756058;
+    transform: all 5s;
+}
+
+.mainmenu_container:hover .backboard {
+    height: 210px;
+}
+
+.submenu>a:hover {
+    color: #FF6464;
+    border-bottom: 1px solid #FF6464;
+}
+
+
+
+
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+/* 슬라이드 기본 */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+.sec_wallpaper {
+    width: 100%;
+    height: 720px;
+    background-color: #FFF3DB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fotmandtxt {
+    margin: 0 auto;
+    width: 1120px;
+    height: 520px;
+    /* background-color: chartreuse; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.fotm_txt {
+    text-align: center;
+    width: 632px;
+    height: 451px;
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    letter-spacing: -0.05em;
+}
+
+.fotm_txt>p {
+    font-family: 'NanumSquareRoundr';
+    font-size: 36px;
+    color: #FF486D;
+
+}
+
+.fotm_txt>p>b {
+    font-family: 'NanumSquareRoundeb';
+}
+
+.fotm_txt>b:nth-child(2) {
+    font-family: 'NanumSquareRoundeb';
+    font-size: 70px;
+    color: #381F12;
+    font-weight: 800;
+
+}
+
+.fotm_txt>span {
+    font-family: 'NanumSquareRoundr';
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: -0.05em;
+
+}
+
+
+.fotm_txt>input {
+    margin: 0 auto;
+    width: 168px;
+    height: 41px;
+    background-color: #381F12;
+    color: #fff;
+    border: none;
+    font-family: 'NanumSquareRoundb';
+    font-size: 16px;
+    border-radius: 20px;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.fotm_txt>input:hover {
+    color: #381F12;
+    background-color: #fff;
+}
+
+input:focus {
+   outline: none;
+
+}
+
+.photo_container {
+    width: 100%;
+    height: 140px;
+    /* background-color: rgb(228, 202, 99); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.photo {
+    width: 138px;
+    height: 138px;
+    border: 1px solid rgba(56, 31, 18, 0.5);
+    border-radius: 100%;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.index_photo_container > .photo:nth-child(1) {
+    background-position: top 12px center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-image: url(https://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?v=210201);
+}
+
+
+.index_photo_container > .photo:nth-child(2) {
+    background-position: center center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    background-image: url(https://www.baskinrobbins.co.kr/upload/product/1682940751.png);
+}
+
+.index_photo_container > .photo:nth-child(3) {
+    background-position: center center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    background-image: url(https://www.baskinrobbins.co.kr/upload/product/1682940945.png);
+}
+
+.index_photo_container > .photo:nth-child(4) {
+    background-position: center center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    background-image: url(https://www.baskinrobbins.co.kr/upload/product/1682941049.png);
+}
+
+.photo>div {
+    position: absolute;
+    z-index: 0;
+    left: 140px;
+    width: 138px;
+    height: 138px;
+    background-color: #381f1283;
+    transition: all 0.4s;
+    border-radius: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.photo:nth-child(1)>div {
+    background-image: url(../img/fotm_txt01.png);
+    background-size: 37.5%;
+}
+
+.photo:nth-child(2)>div {
+    background-image: url(../img/fotm_txt02.png);
+    background-size: 50%;
+}
+
+
+.photo:nth-child(3)>div {
+    background-image: url(../img/fotm_txt03.png);
+    background-size: 37.5%;
+
+}
+
+.photo:nth-child(4)>div {
+    background-image: url(../img/fotm_txt04.png);
+    background-size: 50%;
+
+}
+
+
+.photo:hover>div {
+    left: 0;
+}
+
+
+
+/* 섹션 메뉴 기본 */
+.h2andp {
+    width: auto;
+    height: auto;
+    cursor: default;
+
+}
+
+.h2andp>h2 {
+    font-size: 40px;
+    font-family: 'Paytone One', sans-serif;
+    margin-bottom: 22px;
+}
+
+.p_bold {
+    font-family: 'NanumSquareRoundb';
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.p_light {
+    font-family: 'NanumSquareRoundl';
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.p_pink {
+    font-family: 'NanumSquareRoundl';
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: #FF486D;
+}
+
+.h2andp>button {
+    width: 152px;
+    height: 40px;
+    background-color: #DF3E9C;
+    border-radius: 24px;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'NanumSquareRoundr';
+    color: white;
+    cursor: pointer;
+}
+
+button:focus {
+    border: 1px solid white;
+    border-radius: 24px;
+    outline: none;
+ }
+
+
+
+
+
+
+.sec_menu_container {
+    margin: 120px auto 0 auto;
+    width: 1200px;
+    height: 519px;
+    /* background-color: burlywood; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sec_menu_container .h2andp {
+    text-align: center;
+    color: #343434;
+}
+
+.sec_menu_container .h2andp .p_bold {
+    color: #343434;
+    font-size: 20px;
+}
+
+
+.circle_container {
+    margin: 0 auto;
+    width: 100%;
+    height: 370px;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle_group {
+    width: 220px;
+    height: 370px;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.circle {
+    width: 220px;
+    height: 220px;
+    background-color: #EEEEEE;
+    border-radius: 100%;
+    transition: all 0.5s;
+}
+
+.circle_group:nth-child(1) .circle {
+    background-position: center center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-image: url(https://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?v=210201);
+}
+
+.circle_group:nth-child(2) .circle {
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://www.baskinrobbins.co.kr/upload/product/1682940751.png);
+}
+
+.circle_group:nth-child(3) .circle {
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://www.baskinrobbins.co.kr/upload/product/1682940945.png);
+}
+
+.circle_group:nth-child(4) .circle {
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://www.baskinrobbins.co.kr/upload/product/1619857592.png);
+}
+
+.circle_group:nth-child(5) .circle {
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://www.baskinrobbins.co.kr/upload/product/1682941049.png);
+}
+
+
+
+
+
+
+
+
+.circle_group>b {
+    font-family: 'Quicksand';
+    font-size: 18px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.circle_group>p {
+    font-size: 15px;
+    font-family: 'NanumSquareRoundl';
+    cursor: default;
+}
+
+.circle_group>a {
+    font-family: 'Quicksand';
+    font-size: 13px;
+    color: #6A6A6A;
+}
+
+
+
+
+
+
+
+.sec_event_slider {
+    margin: 120px auto 0 auto;
+    width: 1360px;
+    height: 484px;
+    /* background-color: rgb(204, 124, 20); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.sec_event_slider .h2andp {
+    text-align: center;
+    color: #343434;
+}
+
+.sec_event_slider .h2andp .p_bold {
+    color: #343434;
+    font-size: 20px;
+}
+
+
+.sec-eventslide {
+    margin: 0 auto;
+    width: 1360px;
+    height: 353px;
+    /* background-color: darkgreen; */
+}
+
+
+
+
+.event_png {
+    width: 284px;
+    height: 284px;
+    background-color: rgb(255, 31, 23);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.event_png>img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.sec-eventslide .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.event_status {
+    margin: 10px 0;
+    font-size: 14px;
+    font-family: 'NanumSquareRoundr';
+    color: #767676;
+}
+
+.event_title {
+    font-size: 16px;
+    font-family: 'NanumSquareRoundr';
+    color: #343434;
+}
+
+
+
+
+
+
+
+.sec_store {
+    margin-top: 120px;
+    width: 100%;
+    height: 300px;
+}
+
+
+.store_container {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #B8C6ED;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.store_pic {
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+}
+
+
+.store_pic:nth-child(1) {
+    background-image: url(../img/menubox01.png);
+    background-size: 100% auto;
+}
+
+.store_pic:nth-child(2) {
+    background-image: url(../img/menubox02.png);
+    background-size: 100% auto;
+}
+
+
+
+
+
+
+.sec_deliv {
+    margin-top: 120px;
+    width: 100%;
+    height: 300px;
+}
+
+.deliv_container {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #1F4C9A;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.deliv_container .h2andp {
+    color: #ffffff;
+}
+
+.deliv_container .h2andp>.p_bold {
+    color: #ffffff;
+}
+
+.deliv_container .store_pic {
+    width: 420px;
+    height: 200px;
+    background-image: url(../img/baskin_gif_deliv.gif);
+
+}
+
+
+
+
+
+
+.sec_sns {
+    margin: 120px auto 180px auto;
+    width: 100%;
+    height: 418px;
+
+}
+
+.sec_sns .h2andp {
+    text-align: center;
+}
+
+
+.sns_list {
+    margin: 0 auto;
+    padding: 30px;
+    width: 500px;
+    height: 13px;
+    line-height: 13px;
+    /* background-color: rgb(25, 110, 110); */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sns_list li a {
+    color: rgb(197, 197, 197);
+}
+
+
+.sec-snsslide {
+    margin: 0 auto 40px auto;
+    width: 1200px;
+    height: 284px;
+    /* background-color: #FF486D; */
+}
+
+
+
+.sec-snsslide .swiper-slide {
+    width: 284px;
+    height: 284px;
+    /* background-color: coral; */
+}
+
+.sec-snsslide .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+
+footer {
+    width: 100%;
+    height: 340px;
+    /* position: relative !important;
+    bottom: 0; */
+}
+
+.ft_hd {
+    width: 100%;
+    height: 70px;
+    background-color: #545454;
+
+}
+
+.ft_hd>ul {
+    margin: 0 auto;
+    width: 1032px;
+    height: 100%;
+    /* background-color: #da8a8a; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.ft_hd>ul>li {
+    height: 100%;
+    line-height: 70px;
+    font-size: 15px;
+    color: #C4C4C4;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.ft_hd>ul>li>a {
+    color: #fff;
+}
+
+.ft_bd {
+    width: 100%;
+    height: 270px;
+    background-color: #ffffff;
+}
+
+.ftulimgspan {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+    /* background-color: #da8a8a; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ftulimgspan>ul {
+    height: 56px;
+    /* background-color: bisque; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ftulimgspan>img {
+    width: 225px;
+    height: 36px;
+}
+
+.ftulimgspan>span {
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #999999;
+}
+
+.ftulimgspan>ul>li:last-child {
+    margin-left: 150px;
+}
+
+
+.ftulimgspan>ul>li>select {
+    width: 172px;
+    height: 37px;
+    border: 1px solid #AAAAAA;
+}
+
+
+
+
+
+/* index-login */
+
+.sec_login {
+    width: 100%;
+    height: 932px;
+    /* background-color: #B7F2FF; */
+}
+
+.logwindow {
+    margin: 120px auto 0 auto;
+    width: 602px;
+    height: 712px;
+    /* background-color: blue; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logwindow>.h2andp {
+    text-align: center;
+}
+
+.loginbox_container {
+    margin: 0 auto;
+    width: 602px;
+    height: 508px;
+    border-top: 4px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+
+
+#id,
+#pw {
+    width: 386px;
+    height: 56px;
+    border-radius: 5px;
+    border: 1px solid #C4C4C4;
+    text-indent: 16px;
+}
+
+#id {
+    margin-top: 50px;
+}
+
+.idsavebox {
+    width: 98px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: antiquewhite; */
+    font-family: 'NanumSquareRoundl';
+    font-size: 14px;
+}
+
+
+#idsave {
+
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ebebeb;
+    border-radius: 100%;
+}
+
+.checkbox {
+    border-radius: 100%;
+}
+
+
+#loginbut,
+#joinbut {
+    width: 386px;
+    height: 56px;
+    font-size: 24px;
+    font-family: 'NanumSquareRoundr';
+    font-weight: 100;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+
+#loginbut:focus, #joinbut:focus {
+    border: 1px solid white;
+    outline: none;
+    font-size: 20px;
+ }
+
+#loginbut {
+    background-color: #DF3E9C;
+
+}
+
+#joinbut {
+    background-color: #1F4C9A;
+}
+
+
+
+.login_assetbox {
+    width: 386px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'NanumSquareRoundl';
+    font-size: 14px;
+    color: #343434;
+}
+
+
+
+
+/* 메뉴 -아이스크림 */
+
+
+
+.menu-icecream {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-icecream>.h2andp_title {
+    margin: 120px auto 0 auto;
+    
+}
+
+
+.menu-icecream>.h2andp_title > h2 {
+    font-size: 100px;
+}
+
+.menu-icecream>.h2andp_title > p {
+    font-size: 40px;
+    font-family: 'NanumSquareRoundr';
+    color: #343434;
+}
+
+
+
+.menu-icecream>.h2andp {
+    margin: 50px 0;
+}
+
+.icecream_photo_container > div:nth-child(1) {
+    background-position: center center;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-image: url(http://www.baskinrobbins.co.kr/upload/product/1530775244.png);
+}
+
+.icecream_photo_container > div:nth-child(3) {
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(http://th2.tmon.kr/thumbs/image/36d/6f4/f4b/854e0f3c2_700x700_95_FIT.jpg);
+}
+
+
+.icecream_photo_container > div:nth-child(5) {
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(http://img1.tmon.kr//cdn3/deals/2020/04/02/3340777462/3340777462_summary_51585828085_96195.jpg);
+}
+
+.icecream_photo_container > div:nth-child(7) {
+    background-position: top 12px center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-image: url(https://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?v=210201);
+}
+
+
+/* 아이스크림 슬라이드 */
+.at2-flavorcontainer {
+    margin: 0 auto 120px auto;
+    width: 1000px;
+    height: 252px;
+    border-left: 5px solid rgba(0, 0, 0, 0.5);
+    border-right: 5px solid rgba(0, 0, 0, 0.5);
+    /* background-color: cornflowerblue; */
+}
+
+
+
+.at2_flavor_container {
+    width: 175px;
+    height: 252px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icecreamnumber {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.crown_yellow {
+    color: #ffe601;
+}
+
+.crown_silver {
+    color: #868686;
+}
+
+.crown_bronze {
+    color: #cc4f15;
+}
+
+.icecreamflavor {
+    height: 150px;
+    /* background-color: #f5f5f5; */
+    background-image: url(../img/bg_icecream_corn_2.png);
+    background-size: 21%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.icecreamflavor>img {
+    /* margin-top: 48px; */
+    width: 80%;
+    height: auto;
+}
+
+.icecreamtext {
+    font-size: 14px;
+    font-family: 'NanumSquareRoundr';
+}
+
+
+
+
+.at2-icecreamcontainer {
+    margin: 0 auto 120px auto;
+    width: 1280px;
+    height: 1580px;
+    /* background-color: rgb(255, 102, 229); */
+}
+
+.ice_container tr td {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    /* border-radius: 10px; */
+    /* background-color: #ebebeb; */
+}
+
+
+
+.withcorn {
+    background-image: url(../img/bg_icecream_corn_2.png);
+    background-size: 15%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.ice_name {
+    position: absolute;
+    left: 16px;
+    top: 30px;
+    width: 268px;
+    height: 50px;
+    border-radius: 30px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #1F4C9A;
+    font-family: 'NanumSquareRoundr';
+    font-size: 16px;
+    color: #ececec;
+    cursor: default;
+
+}
+
+.ice_name .ice_name_point {
+    width: 25px;
+    height: 25px;
+    /* background-color: aquamarine; */
+    position: absolute;
+    left: 121.5px;
+    top: 40px;
+    background-image: url(../img/icename_point_blue.png);
+    background-size: 25px auto;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.ice_container tr td>a img {
+    margin: 90px 55px 0 55px;
+    width: 190px;
+    height: auto;
+    cursor: pointer;
+    /* background-color: violet; */
+}
+
+
+.ice_container tr td:hover .ice_name {
+    background-color: #DF3E9C;
+}
+
+.ice_container tr td:hover .ice_name .ice_name_point {
+    background-image: url(../img/icename_point_pink.png);
+}
